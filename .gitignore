@@ -1,0 +1,28 @@
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local development
+node_modules/
+.cache/
+dist/
+.netlify/
+.wrangler/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json
