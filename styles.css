@@ -1139,6 +1139,139 @@
     }
     .expansion-card p strong { color: var(--ink); font-weight: 600; }
 
+    /* ── ENDORSEMENTS & FIELD TESTIMONY ── */
+    .endorsements {
+      background: var(--paper);
+      padding: 6rem 5rem;
+      border-top: 1px solid var(--border-soft);
+    }
+    .endorsements-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .endorsements h2 {
+      font-family: 'Newsreader', serif;
+      font-size: clamp(2rem, 3.4vw, 2.8rem);
+      font-weight: 500;
+      color: var(--ink);
+      margin: 0.8rem 0 1.4rem;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+    }
+    .endorsements h2 em {
+      font-style: italic;
+      color: var(--green);
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.6rem;
+      margin: 3rem 0 1.6rem;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 18px rgba(15, 26, 20, 0.05);
+    }
+    .testimonial-card video {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      height: auto;
+      display: block;
+      background: var(--ink);
+      object-fit: cover;
+      object-position: center top;
+    }
+    .testimonial-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      padding: 1.1rem 1.3rem 0.4rem;
+    }
+    .testimonial-attr {
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      padding: 0 1.3rem 1.3rem;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .testimonial-attr strong { color: var(--ink); font-weight: 600; }
+    .testimonial-context {
+      background: var(--green-pale);
+      border-left: 3px solid var(--green);
+      border-radius: 0.4rem;
+      padding: 1.1rem 1.5rem;
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.65;
+      margin-bottom: 3rem;
+    }
+    .testimonial-context strong { color: var(--green); font-weight: 700; }
+    .testimony-card {
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      padding: 2.2rem 2.4rem;
+      margin-bottom: 1.6rem;
+      box-shadow: 0 2px 18px rgba(15, 26, 20, 0.05);
+    }
+    .testimony-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.6rem;
+    }
+    .testimony-tag.gold-tag { color: var(--gold); }
+    .testimony-card h3 {
+      font-family: 'Newsreader', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin: 0 0 1.2rem;
+      line-height: 1.3;
+    }
+    .testimony-body {
+      font-size: 0.98rem;
+      color: var(--ink);
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+    .testimony-body strong { color: var(--green); font-weight: 700; }
+    .testimony-body em { font-style: italic; }
+    .testimony-quote {
+      font-family: 'Newsreader', serif;
+      font-size: 1.08rem;
+      font-style: italic;
+      color: var(--ink);
+      border-left: 3px solid var(--green);
+      padding: 1rem 1.5rem;
+      margin: 1.2rem 0;
+      background: var(--green-pale);
+      border-radius: 0.4rem;
+      line-height: 1.55;
+    }
+    .testimony-quote.gold-quote {
+      border-left-color: var(--gold);
+      background: var(--gold-pale);
+    }
+    .testimony-quote-attr {
+      display: block;
+      font-style: normal;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.74rem;
+      color: var(--ink-soft);
+      margin-top: 0.7rem;
+      letter-spacing: 0.04em;
+    }
+
     /* ── BEYOND THE EQUIPMENT BILL ── */
     .beyond {
       background: linear-gradient(180deg, #fafbf7 0%, #fef9ea 100%);
@@ -1659,7 +1792,10 @@
       .stat-card { width: auto; flex: 1; min-width: 150px; }
       section, .duality, .loop, .honest, .cta { padding: 4rem 1.6rem; }
       .duality-grid, .paths-grid, .global-grid, .impact-grid, .scale-grid, .compare-grid, .engine-grid, .expansion-grid, .cascade-grid { grid-template-columns: 1fr; }
-      .scale, .fund, .evidence, .engine, .beyond { padding: 4rem 1.6rem; }
+      .scale, .fund, .evidence, .engine, .beyond, .endorsements { padding: 4rem 1.6rem; }
+      .testimonial-grid { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+      .testimonial-card video { aspect-ratio: 9 / 12; }
+      .testimony-card { padding: 1.6rem 1.5rem; }
       .engine-header { grid-template-columns: 1fr; gap: 1.6rem; }
       .compound-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
       .compound-row-label { min-width: 0; }
@@ -1680,4 +1816,9 @@
       nav { padding: 1rem 1.2rem; }
       .nav-links { display: none; }
       footer { flex-direction: column; gap: 0.6rem; text-align: center; padding: 2rem 1.6rem; }
+    }
+
+    @media (max-width: 560px) {
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .testimonial-card video { aspect-ratio: 4 / 5; }
     }
