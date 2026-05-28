@@ -1454,6 +1454,74 @@
       letter-spacing: 0.04em;
     }
 
+    /* ── FROM THE FIELD — compact tile grid for paraphrased voices ── */
+    .from-the-field {
+      margin-top: 1.6rem;
+    }
+    .from-the-field-head {
+      margin-bottom: 1.4rem;
+    }
+    .from-the-field-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 0.7rem;
+    }
+    .from-the-field-intro {
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin: 0;
+      padding: 1rem 1.3rem;
+      background: var(--mist);
+      border-left: 3px solid var(--ink-soft);
+      border-radius: 0.4rem;
+    }
+    .from-the-field-intro strong { color: var(--ink); font-weight: 700; }
+    .from-the-field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+    .field-tile {
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: 12px;
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 2px 14px rgba(15, 26, 20, 0.04);
+      display: flex;
+      flex-direction: column;
+    }
+    .field-tile-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 0.7rem;
+    }
+    .field-tile-quote {
+      font-family: 'Newsreader', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink);
+      margin: 0 0 1rem;
+      padding: 0;
+      line-height: 1.55;
+      flex-grow: 1;
+    }
+    .field-tile-attr {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.03em;
+      margin: 0;
+      padding-top: 0.8rem;
+      border-top: 1px dashed var(--border-soft);
+    }
+
     /* ── BEYOND THE EQUIPMENT BILL ── */
     .beyond {
       background: linear-gradient(180deg, #fafbf7 0%, #fef9ea 100%);
@@ -1978,6 +2046,8 @@
       .testimonial-grid { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
       .testimonial-card video { aspect-ratio: 9 / 12; }
       .testimony-card { padding: 1.6rem 1.5rem; }
+      .from-the-field-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .field-tile { padding: 1.3rem 1.4rem; }
       .letter-card { padding: 1.5rem 1.4rem; }
       .letter-stats { grid-template-columns: 1fr 1fr; padding: 0.85rem 1rem; }
       .engine-header { grid-template-columns: 1fr; gap: 1.6rem; }
