@@ -1,3 +1,21 @@
+/* ============================================================
+ * hmbrimpact.org styles
+ *
+ * Backlog ticket index (search /admin/backlog?q=%23NN):
+ *   META #209  — full hmbrimpact.org build + .ORG submission + SEO
+ *   #210 Hero          #217 Field Evidence    #224 Brand identity
+ *   #211 Impact So Far #218 Endorsements      #225 SEO foundation
+ *   #212 Story/Duality #219 Beyond            #226 Editorial rules
+ *   #213 Loop          #220 Scale             #227 Vercel + DNS
+ *   #214 Rewards       #221 Honest            #228 Bold.org sync auto (open)
+ *   #215 Engine/PERA   #222 Global            #229 Phase 2 monolith (open)
+ *   #216 Live Fund     #223 CTA               #230 Tournament admin (open)
+ *                                             #231 TS verify URLs (open)
+ *                                             #232 WhatsApp pipeline (open)
+ *
+ * Inline-edit follow-up (separate META): #206 / #207 / #208
+ * ============================================================ */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -51,7 +69,7 @@
     }
     .nav-links a:hover { color: var(--green-light); }
 
-    /* ── HERO ── */
+    /* ── HERO ── (backlog #210) */
     .hero {
       min-height: 100vh;
       display: grid; grid-template-columns: 1.1fr 1fr; align-items: center;
@@ -155,7 +173,7 @@
       letter-spacing: 0.02em;
     }
 
-    /* ── IMPACT COUNTERS ── */
+    /* ── IMPACT COUNTERS ── (backlog #211) */
     .impact {
       background: var(--paper);
       max-width: none;
@@ -275,7 +293,7 @@
       color: var(--green-deep);
     }
 
-    /* ── SCALE / PROJECTIONS ── */
+    /* ── SCALE / PROJECTIONS ── (backlog #220) */
     .scale {
       background:
         radial-gradient(ellipse at 80% 20%, rgba(201,162,39,0.16) 0%, transparent 55%),
@@ -389,7 +407,7 @@
     }
     .scale-footnote strong { color: var(--gold-light); font-weight: 600; }
 
-    /* ── BOLD.ORG LIVE FUND ── */
+    /* ── BOLD.ORG LIVE FUND ── (backlog #216; sync point #3 of 5 below — width comment) */
     .fund {
       background: linear-gradient(180deg, var(--paper) 0%, #fdfaf2 100%);
       max-width: none;
@@ -614,7 +632,7 @@
     }
     .fund-footnote strong { color: var(--green); font-weight: 600; }
 
-    /* ── FOUNDER NOTE (within Honest Truth) ── */
+    /* ── FOUNDER NOTE (within Honest Truth) ── (backlog #221) */
     .founder-note {
       display: flex;
       gap: 1.2rem;
@@ -658,7 +676,7 @@
     }
     .founder-note-attr strong { color: var(--gold-light); font-weight: 600; }
 
-    /* ── FIELD EVIDENCE (TOURNAMENT DATA) ── */
+    /* ── FIELD EVIDENCE (TOURNAMENT DATA) ── (backlog #217) */
     .evidence {
       background: linear-gradient(180deg, #f8faf6 0%, var(--paper) 100%);
       max-width: none;
@@ -887,7 +905,7 @@
     .pill-hum { background: rgba(26,107,60,0.12); color: var(--green); border: 1px solid rgba(26,107,60,0.25); }
     .pill-non { background: rgba(15,26,20,0.06); color: var(--ink-soft); border: 1px solid var(--border); }
 
-    /* ── EVIDENCE CHARTS — sustainability + affordability bar pair ── */
+    /* ── EVIDENCE CHARTS — sustainability + affordability bar pair ── (backlog #217; pair must stay together — locked) */
     .evidence-charts-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -967,7 +985,7 @@
     }
     .evidence-footnote strong { color: var(--green); font-weight: 700; }
 
-    /* ── MATCH CHALLENGE / PERA ENGINE ── */
+    /* ── MATCH CHALLENGE / PERA ENGINE ── (backlog #215) */
     .engine {
       background: var(--mist);
       max-width: none;
@@ -1115,7 +1133,7 @@
       transform: translateY(-1px);
     }
 
-    /* ── EXPANSION TRACK (under Global Reach) ── */
+    /* ── EXPANSION TRACK (under Global Reach) ── (backlog #222; pilots stay dashed until adoption genuinely complete) */
     .expansion-block {
       margin-top: 3rem;
       padding-top: 2.4rem;
@@ -1192,7 +1210,7 @@
     }
     .expansion-card p strong { color: var(--ink); font-weight: 600; }
 
-    /* ── ENDORSEMENTS & FIELD TESTIMONY ── */
+    /* ── ENDORSEMENTS & FIELD TESTIMONY ── (backlog #218) */
     .endorsements {
       background: var(--paper);
       padding: 6rem 5rem;
@@ -1267,7 +1285,7 @@
     }
     .testimonial-context strong { color: var(--green); font-weight: 700; }
 
-    /* ── LETTERS OF SUPPORT — formal endorsement cards ── */
+    /* ── LETTERS OF SUPPORT — formal endorsement cards ── (backlog #218; paraphrased excerpts only, never verbatim) */
     .letters-of-support {
       margin: 3rem 0 2rem;
     }
@@ -1454,7 +1472,7 @@
       letter-spacing: 0.04em;
     }
 
-    /* ── FROM THE FIELD — compact tile grid for paraphrased voices ── */
+    /* ── FROM THE FIELD — compact tile grid for paraphrased voices ── (backlog #218; auto-fit grid → pipeline #232) */
     .from-the-field {
       margin-top: 1.6rem;
     }
@@ -1522,7 +1540,7 @@
       border-top: 1px dashed var(--border-soft);
     }
 
-    /* ── BEYOND THE EQUIPMENT BILL ── */
+    /* ── BEYOND THE EQUIPMENT BILL ── (backlog #219) */
     .beyond {
       background: linear-gradient(180deg, #fafbf7 0%, #fef9ea 100%);
       max-width: none;
@@ -1750,7 +1768,7 @@
       margin-bottom: 3rem;
     }
 
-    /* ── DUAL FRAMING ── */
+    /* ── DUAL FRAMING ── (backlog #212) */
     .duality {
       background: var(--paper);
       max-width: none;
@@ -1825,7 +1843,7 @@
       line-height: 1.4;
     }
 
-    /* ── THE LOOP ── */
+    /* ── THE LOOP ── (backlog #213) */
     .loop {
       background: var(--green-deep);
       color: var(--white);
@@ -1878,7 +1896,7 @@
       line-height: 1.6;
     }
 
-    /* ── THREE PATHS ── */
+    /* ── THREE PATHS ── (backlog #214 — Rewards section; path order: gear / co-equal travel / scholarship) */
     .paths-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1939,7 +1957,7 @@
       border-top: 1px solid var(--border-soft);
     }
 
-    /* ── COMMERCIAL HONESTY ── */
+    /* ── COMMERCIAL HONESTY ── (backlog #221) */
     .honest {
       background: var(--ink);
       color: var(--white);
@@ -1975,7 +1993,7 @@
       line-height: 1.45;
     }
 
-    /* ── GLOBAL ── */
+    /* ── GLOBAL ── (backlog #222) */
     .global-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -2003,7 +2021,7 @@
       color: var(--ink-soft);
     }
 
-    /* ── CTA ── */
+    /* ── CTA ── (backlog #223) */
     .cta {
       background:
         radial-gradient(ellipse at 25% 70%, rgba(201,162,39,0.2) 0%, transparent 55%),

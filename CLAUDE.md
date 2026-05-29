@@ -2,6 +2,48 @@
 
 This is the **hmbrimpact.org** static site. README.md holds the full rationale, design system, and maintenance guide for humans. **This file is the rule-set for you.** Read both before making changes — README explains *why*, this file tells you *what to do and what never to touch*.
 
+## Backlog index
+
+Every meaningful unit of work on this site has a ticket in the hmbr-starter backlog at `/admin/backlog`. Search by `#NN` to read the full design history, decisions, and constraints behind each section. **Before editing a section, open its ticket** — the description fields capture editorial constants, structural rules, and "do not violate" decisions that are NOT obvious from reading the markup.
+
+| Section / concern | Ticket | Editor lookup |
+|---|---|---|
+| **META** | [#209](http://localhost:59051/admin/backlog?q=%23209) | Full build + .ORG submission + SEO foundation wrapper |
+| Hero | [#210](http://localhost:59051/admin/backlog?q=%23210) | "One humidifier. Three returns: trees, birdies, futures." |
+| Impact So Far | [#211](http://localhost:59051/admin/backlog?q=%23211) | 6 counter cards, de-rounded values |
+| Story / Duality | [#212](http://localhost:59051/admin/backlog?q=%23212) | Sustainability green + affordability gold |
+| The Loop | [#213](http://localhost:59051/admin/backlog?q=%23213) | Buy → Play → Convert; precedes Rewards |
+| Rewards | [#214](http://localhost:59051/admin/backlog?q=%23214) | Gear / co-equal travel / scholarship — precedes Engine |
+| Engine / PERA | [#215](http://localhost:59051/admin/backlog?q=%23215) | Auditable rigor; references store.hmbrsports.com/pera-rating-system |
+| Live Fund (Bold.org) | [#216](http://localhost:59051/admin/backlog?q=%23216) | $595 / 19 contributors; **5 sync points** — see ticket |
+| Field Evidence | [#217](http://localhost:59051/admin/backlog?q=%23217) | Table + paired charts; UC Baddy outlier stays |
+| Endorsements / Voices | [#218](http://localhost:59051/admin/backlog?q=%23218) | 4-tier credibility; privacy constants locked |
+| Beyond the Equipment Bill | [#219](http://localhost:59051/admin/backlog?q=%23219) | Three-paths frame |
+| Scale | [#220](http://localhost:59051/admin/backlog?q=%23220) | Forward-looking projections |
+| Honest Truth | [#221](http://localhost:59051/admin/backlog?q=%23221) | Business-not-charity + founder note (Hari Gunupudi) |
+| Global Reach | [#222](http://localhost:59051/admin/backlog?q=%23222) | 12 active + UK/EU pilots (dashed border) |
+| CTA | [#223](http://localhost:59051/admin/backlog?q=%23223) | Brand voice: calm + evidence-led |
+| Brand identity | [#224](http://localhost:59051/admin/backlog?q=%23224) | Logomark favicon + palette + font stack |
+| SEO foundation | [#225](http://localhost:59051/admin/backlog?q=%23225) | OG + Twitter + sitemap + JSON-LD; render pipeline documented |
+| Editorial rules + memory | [#226](http://localhost:59051/admin/backlog?q=%23226) | This file + README; ranges, privacy, "contribute" not "donate" |
+| Vercel + DNS | [#227](http://localhost:59051/admin/backlog?q=%23227) | Squarespace DNS; preserve Workspace MX + verification TXT |
+
+**Open follow-ups (accepted, not shipped):**
+
+- [#228](http://localhost:59051/admin/backlog?q=%23228) — Automate Bold.org 5-sync-point burden
+- [#229](http://localhost:59051/admin/backlog?q=%23229) — Phase 2 migration into hmbr-starter monolith (after Oct 6)
+- [#230](http://localhost:59051/admin/backlog?q=%23230) — Tournament admin app (defer to Phase 2)
+- [#231](http://localhost:59051/admin/backlog?q=%23231) — Replace tournamentsoftware.com placeholder URLs with specific event links
+- [#232](http://localhost:59051/admin/backlog?q=%23232) — Continued WhatsApp testimonial intake → From-the-Field grid
+
+**Inline-edit follow-ups (separate META, broader pattern):**
+
+- [#206](http://localhost:59051/admin/backlog?q=%23206) — META: inline-edit via rendered preview
+- [#207](http://localhost:59051/admin/backlog?q=%23207) — hmbrimpact.org inline content edit mode (`?edit=1`)
+- [#208](http://localhost:59051/admin/backlog?q=%23208) — hmbr-starter `/admin/drafts` route (the bigger long-term win)
+
+When logging new tickets for this repo: use seed script at `hmbr-starter/scripts/seed-backlog-hmbrimpact-build.ts` as the template.
+
 ## What this site is
 
 A single static page (HTML + CSS + tiny vanilla JS) at `hmbrimpact.org`. It exists to make three .ORG Impact Awards submissions credible:
