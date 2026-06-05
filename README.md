@@ -1,5 +1,11 @@
 # hmbrimpact.org
 
+> **⚠️ This repo is retired as of 2026-06-05.** `hmbrimpact.org` is now served from the [`gharikishore/hmbr-starter`](https://github.com/gharikishore/hmbr-starter) monorepo at the `/impact-site` route group (host-rewritten from the public `hmbrimpact.org` domain).
+>
+> This repo stays as a **30-day rollback fallback** through 2026-07-05. After that it gets archived. Don't make new editorial changes here — go to `hmbr-starter/src/app/impact-site/page.tsx` instead. See `CLAUDE.md` for the full migration status.
+
+---
+
 The official impact site for HmBr Sports — telling the story of how a single shuttlecock humidifier saves trees, saves birdies, and makes badminton more affordable, then turns every match played into gear, travel, or scholarship funding.
 
 ---

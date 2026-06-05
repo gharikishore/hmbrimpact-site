@@ -1,6 +1,20 @@
 # hmbrimpact-site — instructions for Claude
 
-This is the **hmbrimpact.org** static site. README.md holds the full rationale, design system, and maintenance guide for humans. **This file is the rule-set for you.** Read both before making changes — README explains *why*, this file tells you *what to do and what never to touch*.
+> ## ⚠️ MIGRATION COMPLETE 2026-06-05 — repo is FALLBACK ONLY
+>
+> **This repo no longer serves `hmbrimpact.org`.** As of 2026-06-05, the site is served from `gharikishore/hmbr-starter` at the `/impact-site` route group via custom-domain host rewrite. The React/JSX port is live at `hmbrimpact.org`. See backlog tickets [#234](http://localhost:59051/admin/backlog?q=%23234) + [#235](http://localhost:59051/admin/backlog?q=%23235) for the cutover verification.
+>
+> **This repo's job now: be a 30-day rollback target.**
+>
+> - The Vercel project remains deployed at its `*.vercel.app` URL — if anything regresses on `hmbrimpact.org`, point DNS back to this project (TTL is low; <5 min propagation).
+> - The GitHub repo is editable (NOT archived yet) so a quick fix is possible during the rollback window.
+> - Window: **through 2026-07-05.** Then the repo gets archived and the standalone Vercel project gets deleted. See [#384](http://localhost:59051/admin/backlog?q=%23384) for that retirement checklist.
+>
+> **Do NOT make new editorial changes here.** Any new content work happens against `hmbr-starter/src/app/impact-site/page.tsx`. If a future session lands in this repo by accident, fix things in hmbr-starter instead.
+
+---
+
+This is the **hmbrimpact.org** static site (now retired, see above). README.md holds the full rationale, design system, and maintenance guide for humans. **This file is the rule-set for you.** Read both before making changes — README explains *why*, this file tells you *what to do and what never to touch*.
 
 ## Backlog index
 
